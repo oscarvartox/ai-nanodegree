@@ -20,3 +20,6 @@ ENV PANDOC_VERSION=2.4
 
 RUN curl -fsL https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb --output pandoc-${PANDOC_VERSION}-1-amd64.deb
 RUN apt install ./pandoc-${PANDOC_VERSION}-1-amd64.deb
+
+EXPOSE 35729
+EXPOSE 4000

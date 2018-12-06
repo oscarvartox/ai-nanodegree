@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 docker run -it --rm \
+    -p 35729:35729 \
     -p 4000:4000 \
-    --network=host \
     --name=scaffold \
     -v ~/.ivy2:/root/.ivy2  -v ~/.sbt:/root/.sbt \
     -w /nanodegree \
