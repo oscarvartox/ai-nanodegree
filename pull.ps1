@@ -1,0 +1,1 @@
+docker pull oscarvarto/nanodegree-scaffolding:v0.1
