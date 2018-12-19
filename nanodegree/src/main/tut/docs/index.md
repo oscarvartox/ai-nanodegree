@@ -1,4 +1,3 @@
-# Scala Essentials - Documentation
+# AI Nanodegree - Documentation
 
-Welcome to the **Scala Essentials Documentation** site! 
-
+Welcome to the **AI Nanodegree Documentation** site!
