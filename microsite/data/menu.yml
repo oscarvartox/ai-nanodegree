@@ -1,0 +1,21 @@
+options:
+
+    #############################
+    # DOCUMENTATION
+    #############################
+
+  - title: Welcome!
+    url: docs.html
+    menu_type: docs
+  
+  - title: M4 - Functions
+    url: docs/module4.html
+    menu_type: docs
+
+    #############################
+    # SLIDES
+    #############################
+
+  - title: M4 - Functions
+    url: slides/module4.html
+    menu_type: slides
