@@ -12,6 +12,10 @@ options:
     url: docs/module1.html
     menu_type: docs
 
+  - title: M2 - Examples
+    url: docs/module2.html
+    menu_type: docs  
+
     #############################
     # SLIDES
     #############################

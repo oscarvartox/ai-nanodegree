@@ -1,0 +1,126 @@
+<html><head><title>AI Nanodegree: Examples</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Intersys Consulting" /><meta name="description" content="AI Nanodegree" /><meta name="og:image" content="/ai-nanodegree/img/poster.png" /><meta name="og:title" content="AI Nanodegree: Examples" /><meta name="og:site_name" content="AI Nanodegree" /><meta name="og:url" content="https://oscarvartox.github.io/ai-nanodegree" /><meta name="og:type" content="website" /><meta name="og:description" content="AI Nanodegree" /><link rel="icon" type="image/png" href="/ai-nanodegree/img/favicon.png" /><meta name="twitter:title" content="AI Nanodegree: Examples" /><meta name="twitter:image" content="https://oscarvartox.github.io/ai-nanodegreeimg/poster.png" /><meta name="twitter:description" content="AI Nanodegree" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/ai-nanodegree/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/ai-nanodegree/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/ai-nanodegree/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/ai-nanodegree/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/ai-nanodegree/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/ai-nanodegree/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/ai-nanodegree/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/ai-nanodegree/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/ai-nanodegree/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/ai-nanodegree/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/ai-nanodegree/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/ai-nanodegree/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/ai-nanodegree/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/ai-nanodegree/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/ai-nanodegree/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/ai-nanodegree/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/ai-nanodegree/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/ai-nanodegree/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/ai-nanodegree/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/ai-nanodegree/img/favicon310x150.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/ai-nanodegree/highlight/styles/default.css" /><link rel="stylesheet" href="/ai-nanodegree/css/style.css" /><link rel="stylesheet" href="/ai-nanodegree/css/palette.css" /><link rel="stylesheet" href="/ai-nanodegree/css/codemirror.css" /></head><body class="docs"><div id="wrapper"><div id="sidebar-wrapper"><ul id="sidebar" class="sidebar-nav"><li class="sidebar-brand"><a href="/ai-nanodegree/" class="brand"><div class="brand-wrapper"><span>AI Nanodegree</span></div></a></li> <li><a href="/ai-nanodegree/docs.html" class="">Welcome!</a></li> <li><a href="/ai-nanodegree/docs/module1.html" class="">M1 - Introduction</a></li> <li><a href="/ai-nanodegree/docs/module2.html" class="">M2 - Examples</a></li> </ul></div><div id="page-content-wrapper"><div class="nav"><div class="container-fluid"><div class="row"><div class="col-lg-12"><div class="action-menu pull-left clearfix"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></div><ul class="pull-right"><li id="gh-eyes-item" class="hidden-xs"><a href="https://github.com/oscarvartox/ai-nanodegree"><i class="fa fa-eye"></i><span>WATCH<span id="eyes" class="label label-default">--</span></span></a></li><li id="gh-stars-item" class="hidden-xs"><a href="https://github.com/oscarvartox/ai-nanodegree"><i class="fa fa-star-o"></i><span>STARS<span id="stars" class="label label-default">--</span></span></a></li><li><a href="#" onclick="shareSiteTwitter('AI Nanodegree AI Nanodegree');"><i class="fa fa-twitter"></i></a></li><li><a href="#" onclick="shareSiteFacebook('AI Nanodegree AI Nanodegree');"><i class="fa fa-facebook"></i></a></li><li><a href="#" onclick="shareSiteGoogle();"><i class="fa fa-google-plus"></i></a></li></ul></div></div></div></div><div id="content" data-github-owner="oscarvartox" data-github-repo="ai-nanodegree"><div class="content-wrapper"><section><p><img src="../img/KnapsackProblem.jpg" alt="Knapsack Problem" /></p>
+
+<h2 id="defining-individual">Defining Individual</h2>
+
+<p>Before creating our population, we have to define the individual, for that we need a metric for our aptitude.
+Lets say we wanted to find which items can be carried that will give us the most survival points, without exceeding the limit weight of 80. 
+This means we have 9 items, and each item can be either taken(value of 1) or dropped(value of 0).
+In this example each individual would be made of 9 chromosomes, each chromosome made up of 1 allele, as we can only have 1 or 0 as values.</p>
+
+<h2 id="creating-first-population">Creating first population</h2>
+
+<p><img src="../img/population1.jpg" alt="First Population" /></p>
+
+<p>Having our genome defined, we now create a population, this consists of generating a predefined number of individuals with random 
+values, the size of the population has to be big enough to be able to find the result, if its too small it will converge sooner and most 
+probably, will not come close to the result, but you have to keep in mind that bigger populations will take more time to compute.</p>
+
+<h2 id="fitness-functionerror-function">Fitness function/Error function</h2>
+
+<p><img src="../img/fitnessFunction1.jpg" alt="Population with aptitude" /></p>
+
+<p>After creating our population, we have to decide which individual is the fittest, so we have to compare it with our objective, 
+Since our objective is to have the highest survival points for our gear and there is no predefined target, 
+Aptitude will be given by the sum of each item’s survival points, that the individual has on 1. So that a higher result means a fitter individual.</p>
+
+<p>After getting everyone’s aptitude, we will now sort our population based in this, having our fittest individual on top.</p>
+
+<h2 id="selection">Selection</h2>
+
+<p><img src="../img/Selection.jpg" alt="Selection Example" /></p>
+
+<p>There are different ways to make the selection, for this example, we will use tournaments.
+Tournaments consist in selecting a small percentage of random individuals from the population, selecting and 
+choosing the fittest of them, this individual will now be the father, we repeat the process to get the mother.</p>
+
+<h2 id="crossoverreproduction">Crossover/Reproduction</h2>
+
+<p><img src="../img/crossover1.jpg" alt="Crossover example" /></p>
+
+<p>Once the set of parents is selected we do the reproduction or crossover, the simplest method is to select a random slicing point, this point
+will go from 1 to n-2, so that bit in position 0 and n-1(last bit) won’t be taken in consideration.
+After the slicing point is defined, we will slice both parents and make the crossover as shown.
+Suppose we had the slicing point at position 3 for the next individuals. 
+We now take green cells for the first child and white cells for the second.</p>
+
+<h2 id="mutation">Mutation</h2>
+
+<p><img src="../img/mutation1.jpg" alt="Mutation example" /></p>
+
+<p>Mutation will consist of changing a random bit from a random individual, where the probability for it to occur is going to be really small(less than 5%).
+Recommendation might vary but usually goes around 1.5%-2%.
+Having a small probability will help the exploration factor, without affecting the exploitation, which allows the population to eventually converge into 
+an optimal solution, and since exploration is, in a way, the opposite from exploitation, having a big chance to mutate, will prevent population’s convergence. 
+In the other hand, having a really small mutation factor is not good either, as the population will most probably converge into a local minimum.</p>
+
+<p>Following the example before: 
+We decided to mutate bit in position 6, if the bit had a value of 1, it will take a value of 0 and vice versa.</p>
+
+<h2 id="convergence">Convergence</h2>
+
+<p>We mentioned this concept before, but what does it mean?
+Convergence means that all our individuals, or at least most of them, are now the same.
+When convergence happens too soon, it usually means that the algorithm got stuck in a local minimum, different from the global, which is our actual result,
+To avoid this, different parameters can be tested, such as population size, mutation probability and tournament size can be increased or decreased to better fit our needs.</p>
+
+<h2 id="applications">Applications</h2>
+
+<h3 id="natural-sciences-mathematics-and-computer-science">Natural Sciences, Mathematics and Computer Science</h3>
+
+<ul>
+  <li>Artificial creativity</li>
+  <li>Network topologies</li>
+  <li>Electronic circuit design, known as evolvable hardware</li>
+  <li>Feature selection for machine learning</li>
+  <li>Learning robot behavior using genetic algorithms</li>
+  <li>Traveling salesman problem and its application</li>
+</ul>
+
+<h3 id="earth-sciences">Earth Sciences</h3>
+
+<p>Design of water resource systems</p>
+
+<h3 id="finance-economics-and-social-sciences">Finance, Economics and Social Sciences</h3>
+
+<ul>
+  <li>Economics</li>
+  <li>Design of anti-terrorism systems</li>
+  <li>Linguistic analysis, including grammar induction and other aspects of Natural Language processing</li>
+</ul>
+
+<h3 id="industry-management-and-engineering">Industry, Management and Engineering</h3>
+
+<ul>
+  <li>Automated design</li>
+  <li>Mobile communications infrastructure optimization.</li>
+  <li>Plant floor layout</li>
+  <li>Quality control</li>
+  <li>Vehicle routing problems</li>
+</ul>
+
+<h3 id="biological-sciences-and-bioinformatic">Biological Sciences and Bioinformatic</h3>
+
+<ul>
+  <li>RNA structure prediction</li>
+  <li>Gene expression profiling analysis</li>
+</ul>
+
+<h4 id="neural-networks">Neural Networks</h4>
+
+<h3 id="other-applications">Other Applications</h3>
+
+<ul>
+  <li><a href="https://www.nytimes.com/es/2018/10/19/inteligencia-artificial-escritores-novelistas/">Writing a book?</a></li>
+  <li><a href="https://www.pcworld.com/article/3053520/analytics/ai-just-3d-printed-a-brand-new-rembrandt-and-its-shockingly-good.html">Painting a new Rembrandt?</a></li>
+  <li>Write music</li>
+  <li>Detect cancer</li>
+  <li>AI learns to play… on youtube</li>
+</ul>
+
+<h2 id="code-in-python">Code in Python</h2>
+
+<p><a href="https://github.com/eduardogamboa11/MSc-AI-GeneticAlgorithm">Genetic Algorithm implementation</a></p>
+</section></div></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/ai-nanodegree/highlight/highlight.pack.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/fsharp.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/csharp.min.js"></script><script>hljs.configure({languages:['scala','java','bash','haskell','fsharp','scala','python','java','csharp']});
+hljs.initHighlighting();
+              </script><script src="/ai-nanodegree/js/mathjax-config.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML,https://oscarvarto.github.io/learning-scala/js/mathjax-config.js"></script><script>((window.gitter = {}).chat = {}).options = {
+room: 'IntersysConsulting/ai-nanodegree'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script><script src="/ai-nanodegree/js/main.js"></script></body></html>
