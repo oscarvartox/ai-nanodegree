@@ -9,13 +9,13 @@ author: Eduardo Gamboa
 
 ## Content
 
-What are Genetic Algorithms?
-Example
-Applications
-Workshop
++ What are Genetic Algorithms?
++ Example
++ Applications
++ Workshop
 
-Content Owner: Eduardo Gamboa
-Mentor: Eduardo Gamboa
++ Content Owner: Eduardo Gamboa  
++ Mentor: Eduardo Gamboa
 
 ## Objective
 
@@ -24,9 +24,9 @@ Be able to explain in simple words what is a GA.
 Learn what are they used for and when to use it.
 Experiment working with the algorithm.
 
-## What are Genetic Algorithms?
+## What are Genetic Algorithms
 
-![Example of Evolution](../img/Bears.JPG)
+![Example of Evolution](../img/bears1.jpg)
 
 ### Why?
 
@@ -34,6 +34,7 @@ Polar bears adapted, at the beginning, living in the snow was no easy task for a
  prey and making it harder for him to eat, with time, polar bears started to survive more over its brown relative, they could camouflage better
  in snow, so hunting was easier. Many generations later, grizzlies started to perish in the snow, making them rarer and rarer until their
  population disappeared, leaving only polar bears, who were at first the minority, the only survivors.
+
 GA follows the same principle as natural selection, giving preference to those with the capabilities to adjust better to the environment,
 in other words, gives preference to the fittest. So that with every generation, the species evolve and adapt. GAs were designed as an abstraction 
 of nature, to mimic this process and achieve what life has done in a relatively short period, into a much shorter time.
