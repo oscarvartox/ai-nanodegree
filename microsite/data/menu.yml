@@ -8,8 +8,8 @@ options:
     url: docs.html
     menu_type: docs
   
-  - title: M4 - Functions
-    url: docs/module4.html
+  - title: M1 - Introduction
+    url: docs/module1.html
     menu_type: docs
 
     #############################
